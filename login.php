@@ -26,7 +26,6 @@ if (!empty($_POST)) {
 				// ログイン成功
 
 //  ここにセッションハイジャック対策を追加
-//
 				session_regenerate_id(true);
 				$_SESSION['id'] = $member['id'];
 				$_SESSION['time'] = time();
